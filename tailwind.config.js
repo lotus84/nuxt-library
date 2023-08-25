@@ -1,4 +1,5 @@
 module.exports = {
+  content: [],
   theme: {
     screens: {
       tablet: "768px",
