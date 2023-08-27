@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>{{ $t('innerLayout') }}</p>
+    <p>{{ $t("innerLayout") }}</p>
     <slot />
   </div>
 </template>
