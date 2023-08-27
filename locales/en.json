@@ -2,8 +2,10 @@
   "language": "language",
   "library": "Library",
   "placeholder": {
-    "email": "Email"
+    "email": "Email",
+    "password": "Password"
   },
   "selectLanguage": "select a language",
-  "innerLayout": "Some inner layout shared across all pages"
+  "innerLayout": "Some inner layout shared across all pages",
+  "signIn": "Sign in"
 }

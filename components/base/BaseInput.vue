@@ -34,9 +34,9 @@ const {
 </script>
 
 <template>
-  <label class="mb-6">
+  <label class="flex w-full relative">
     <input
-      class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      class="py-4 px-8 bg-white border border-secondary border-solid rounded-none outline-none text-primary opacity-50 text-base hover:border-tolopea focus:border-tolopea transition-colors flex w-full"
       :name="name"
       :value="inputValue"
       :type="props.type"
@@ -46,48 +46,9 @@ const {
     />
     <span
       v-show="errorMessage"
-      class="mt-2 text-sm text-red-600 dark:text-red-500"
+      class="absolute left-0 -bottom-5 text-sm text-jam"
     >
       {{ errorMessage }}
     </span>
   </label>
 </template>
-
-<style module>
-.root {
-  position: relative;
-  display: flex;
-  width: 100%;
-}
-
-._error {
-  & input {
-    border-color: var(--error-color);
-  }
-
-  & input:hover,
-  & input:focus {
-    border-color: var(--error-color);
-  }
-}
-
-._success {
-  & input {
-    border-color: var(--success-color);
-  }
-
-  & input:hover,
-  & input:focus {
-    border-color: var(--success-color);
-  }
-}
-
-.errorMessage {
-  position: absolute;
-  top: 100%;
-  left: 8px;
-  font-size: 12px;
-  line-height: 14px;
-  color: var(--error-color);
-}
-</style>

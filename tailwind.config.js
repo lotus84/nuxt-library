@@ -18,6 +18,8 @@ module.exports = {
       lavender: "#EBE8F4",
       white: "#FFFFFF",
       melrose: "#CAC6DA",
+      tolopea: "#1E193E",
+      jam: "#A70C45"
     },
   },
   darkMode: "class",

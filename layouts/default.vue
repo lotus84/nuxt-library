@@ -4,7 +4,7 @@ import TheHeader from "~/components/TheHeader.vue";
 
 <template>
   <div
-    class="flex flex-col justify-start items-start min-h-screen w-full bg-white text-primary"
+    class="flex flex-col justify-start items-stretch min-h-screen w-full bg-white text-primary"
   >
     <TheHeader />
     <slot />
