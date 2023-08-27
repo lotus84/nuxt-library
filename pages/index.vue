@@ -1,6 +1,17 @@
+<script setup>
+import BaseInput from "~/components/base/BaseInput.vue";
+</script>
+
 <template>
   <div class="p-4">
-    <h1 class="text-gray-700 text-base">{{ $t("hello") }}</h1>
+    <h1 class="text-gray-700 text-base">{{ $t("library") }}</h1>
+    <div>
+      <BaseInput
+        :placeholder="$t('placeholder.email')"
+        name="email"
+        type="email"
+      />
+    </div>
     <form>
       <label
         class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"

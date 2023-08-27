@@ -1,4 +1,7 @@
 {
-  "hello": "Привет мир!",
-  "language": "язык"
+  "language": "язык",
+  "library": "Библиотека",
+  "placeholder": {
+    "email": "Ваша почта"
+  }
 }
