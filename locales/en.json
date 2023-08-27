@@ -1,4 +1,9 @@
 {
   "language": "language",
-  "library": "Library"
+  "library": "Library",
+  "placeholder": {
+    "email": "Email"
+  },
+  "selectLanguage": "select a language",
+  "innerLayout": "Some inner layout shared across all pages",
 }
