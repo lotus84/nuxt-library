@@ -19,7 +19,7 @@ module.exports = {
       white: "#FFFFFF",
       melrose: "#CAC6DA",
       tolopea: "#1E193E",
-      jam: "#A70C45"
+      jam: "#A70C45",
     },
   },
   darkMode: "class",

@@ -16,7 +16,7 @@ import SignInForm from "~/components/SignInForm.vue";
         alt=""
       />
     </div>
-    <div class="relative flex w-full py-30 px-20">
+    <div class="relative flex w-full py-28 px-20">
       <ContentContainer>
         <div
           class="flex self-end w-2/4 max-w-xl p-12 bg-white flex-col gap-8 justify-start items-stretch"
