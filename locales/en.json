@@ -2,9 +2,11 @@
   "language": "language",
   "library": "Library",
   "placeholder": {
-    "email": "Email",
+    "username": "Username",
     "password": "Password"
   },
+  "emailRequired": "Email is required",
+  "passwordRequired": "Password is required",
   "selectLanguage": "select a language",
   "innerLayout": "Some inner layout shared across all pages",
   "signIn": "Sign in"

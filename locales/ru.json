@@ -2,7 +2,7 @@
   "language": "язык",
   "library": "Библиотека",
   "placeholder": {
-    "email": "Электронная почта",
+    "username": "Логин",
     "password": "Пароль"
   },
   "selectLanguage": "выбрать язык",

@@ -22,10 +22,9 @@ export default defineNuxtConfig({
     },
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
   css: ["~/assets/main.css"],
 
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@pinia/nuxt"],
 
   spaLoadingTemplate: false,
 

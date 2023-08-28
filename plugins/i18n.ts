@@ -8,6 +8,9 @@ export default defineNuxtPlugin(({ vueApp }) => {
     locale: "ru",
     fallbackLocale: "ru",
     globalInjection: true,
+    detectBrowserLanguage: {
+      useCookie: true,
+    },
     messages: {
       en,
       ru,

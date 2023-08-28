@@ -1,29 +1,40 @@
 <script setup>
+import { reactive } from "vue";
 import { useRouter } from "vue-router";
 import { Form } from "vee-validate";
 import { object, string } from "yup";
-// import { useAuthStore } from "../stores/auth";
+import { storeToRefs } from "pinia";
+import { useAuthStore } from "~/stores/auth";
 import BaseInput from "~/components/base/BaseInput.vue";
 import BaseButton from "~/components/base/BaseButton.vue";
 
-// const authStore = useAuthStore();
+const { authenticateUser } = useAuthStore();
+const { isUserAuth } = storeToRefs(useAuthStore());
+
+const user = reactive({
+  username: "",
+  password: "",
+});
 
 const schema = object().shape({
-  username: string().required("заполните поле"),
-  password: string().required("введите пароль"),
+  username: string().required("Укажите логин"),
+  password: string().required("Укажите пароль"),
 });
 
 const router = useRouter();
 
-function onSubmit(event) {
-  // authStore.setAuthToken(event.username);
-  router.push({ name: "add-item" });
+async function onSubmit(event) {
+  user.password = event.password;
+  user.username = event.username;
+
+  await authenticateUser(user);
+  if (isUserAuth) {
+    router.push({ name: "dashboard" });
+  }
 }
 
 function onInvalidSubmit() {
   const submitBtn = document.querySelector(".submit-button");
-
-  // authStore.clearAuthToken();
 
   submitBtn.classList.add("invalid");
   setTimeout(() => {
@@ -41,7 +52,7 @@ function onInvalidSubmit() {
   >
     <div>
       <BaseInput
-        :placeholder="$t('placeholder.email')"
+        :placeholder="$t('placeholder.username')"
         name="username"
         type="text"
       />
