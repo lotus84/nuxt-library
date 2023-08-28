@@ -1,19 +1,25 @@
 module.exports = {
   content: [],
   theme: {
+    fontFamily: {
+      sans: ["Rubik", "sans-serif"],
+    },
     screens: {
       tablet: "768px",
       laptop: "1024px",
       desktop: "1280px",
     },
-    extend: {
-      colors: {
-        linkedin: {
-          primary: "#0A66C2",
-          lighter: "#378fe9",
-          darker: "#004182",
-        },
-      },
+    colors: {
+      transparent: "transparent",
+      current: "currentColor",
+      primary: "#2A254B",
+      secondary: "#4E4D93",
+      grey: "#F9F9F9",
+      lavender: "#EBE8F4",
+      white: "#FFFFFF",
+      melrose: "#CAC6DA",
+      tolopea: "#1E193E",
+      jam: "#A70C45",
     },
   },
   darkMode: "class",

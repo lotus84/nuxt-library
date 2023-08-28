@@ -1,9 +1,11 @@
 <script setup>
-import TheIntro from "~/components/the-intro/TheIntro.vue";
+definePageMeta({
+  layout: "inner",
+});
 </script>
 
 <template>
   <div class="flex flex-col grow w-full min-h-full">
-    <TheIntro />
+    {{ $t("innerLayout") }}
   </div>
 </template>

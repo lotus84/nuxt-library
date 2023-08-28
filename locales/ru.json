@@ -1,4 +1,11 @@
 {
-  "hello": "Привет мир!",
-  "language": "язык"
+  "language": "язык",
+  "library": "Библиотека",
+  "placeholder": {
+    "username": "Логин",
+    "password": "Пароль"
+  },
+  "selectLanguage": "выбрать язык",
+  "innerLayout": "Какой-то внутренний лейаут для всех страниц",
+  "signIn": "Войти"
 }
