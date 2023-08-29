@@ -7,9 +7,14 @@ import TheHeader from "~/components/TheHeader.vue";
     <TheSidebar />
     <div class="flex flex-col grow justify-start items-start min-h-full">
       <TheHeader />
-      <div class="flex flex-col justify-start items-start bg-grey p-5">
-        <p>{{ $t("innerLayout") }}</p>
-        <slot />
+      <div
+        class="flex flex-col grow justify-start items-start w-full bg-grey p-5"
+      >
+        <div
+          class="flex flex-col grow justify-start items-start w-full p-6 border border-melrose border-solid rounded bg-white"
+        >
+          <slot />
+        </div>
       </div>
     </div>
   </div>

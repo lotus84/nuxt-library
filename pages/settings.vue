@@ -6,6 +6,6 @@ definePageMeta({
 
 <template>
   <div class="flex flex-col grow w-full min-h-full">
-    {{ $t("settings") }}
+    <h2 class="text-3xl">{{ $t("settings") }}</h2>
   </div>
 </template>

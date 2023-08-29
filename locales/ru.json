@@ -12,5 +12,11 @@
   "settings": "Настройки",
   "users": "Пользователи",
   "loans": "Выданные читателям",
-  "books": "Книги"
+  "books": "Книги",
+  "bookId": "ID",
+  "bookCover": "Обложка",
+  "bookTitle": "Название",
+  "bookAuthor": "Автор",
+  "bookStatus": "Статус",
+  "statusAvailable": "В наличии"
 }

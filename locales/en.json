@@ -14,5 +14,11 @@
   "settings": "Settings",
   "users": "Users",
   "loans": "Loans",
-  "books": "Books"
+  "books": "Books",
+  "bookId": "ID",
+  "bookCover": "Cover",
+  "bookTitle": "Title",
+  "bookAuthor": "Author",
+  "bookStatus": "Status",
+  "statusAvailable": "Available"
 }
