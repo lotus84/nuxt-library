@@ -24,4 +24,3 @@ export const useCatalogStore = defineStore("catalog", () => {
     findBookById,
   };
 });
-
