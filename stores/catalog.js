@@ -17,10 +17,15 @@ export const useCatalogStore = defineStore("catalog", () => {
     return books.find((book) => Number(book.key) === Number(id));
   }
 
+  function addBook(book) {
+    books.push(book);
+  }
+
   return {
     books,
     isLoading,
     getBooks,
     findBookById,
+    addBook,
   };
 });

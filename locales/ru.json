@@ -3,7 +3,10 @@
   "library": "Библиотека",
   "placeholder": {
     "username": "Логин",
-    "password": "Пароль"
+    "password": "Пароль",
+    "bookTitle": "Название",
+    "bookAuthor": "Автор",
+    "bookCover": "Ссылка на обложку"
   },
   "selectLanguage": "выбрать язык",
   "innerLayout": "Какой-то внутренний лейаут для всех страниц",
@@ -18,5 +21,8 @@
   "bookTitle": "Название",
   "bookAuthor": "Автор",
   "bookStatus": "Статус",
-  "statusAvailable": "В наличии"
+  "statusAvailable": "В наличии",
+  "addBook": "Добавить книгу",
+  "save": "Сохранить",
+  "newBook": "Новая книга"
 }

@@ -36,7 +36,7 @@ const {
 <template>
   <label class="flex w-full relative">
     <input
-      class="py-4 px-8 bg-white border border-secondary border-solid rounded-none outline-none text-primary opacity-50 text-base hover:border-tolopea hover:opacity-100 focus:border-tolopea focus:opacity-100 transition-all flex w-full"
+      class="py-4 px-8 border-solid rounded-none outline-none text-primary placeholder-current bg-white border opacity-60 text-base border-secondary hover:border-tolopea hover:opacity-100 focus:border-tolopea focus:opacity-100 transition-all flex w-full"
       :name="name"
       :value="inputValue"
       :type="props.type"
