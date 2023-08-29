@@ -9,5 +9,10 @@
   "passwordRequired": "Password is required",
   "selectLanguage": "select a language",
   "innerLayout": "Some inner layout shared across all pages",
-  "signIn": "Sign in"
+  "signIn": "Sign in",
+  "menu": "Menu",
+  "settings": "Settings",
+  "users": "Users",
+  "loans": "Loans",
+  "books": "Books"
 }

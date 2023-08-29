@@ -5,7 +5,7 @@ import LanguageToggle from "~/components/LanguageToggle.vue";
 </script>
 
 <template>
-  <header class="flex w-full border-b border-melrose border-solid">
+  <header class="flex w-full bg-white border-b border-melrose border-solid">
     <ContentContainer>
       <div class="flex items-center justify-between w-full">
         <div>

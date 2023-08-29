@@ -29,7 +29,7 @@ async function onSubmit(event) {
 
   await authenticateUser(user);
   if (isUserAuth) {
-    router.push({ name: "dashboard" });
+    router.push({ name: "books" });
   }
 }
 
