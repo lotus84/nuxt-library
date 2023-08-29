@@ -3,7 +3,10 @@
   "library": "Library",
   "placeholder": {
     "username": "Username",
-    "password": "Password"
+    "password": "Password",
+    "bookTitle": "Title",
+    "bookAuthor": "Author",
+    "bookCover": "Cover Link"
   },
   "emailRequired": "Email is required",
   "passwordRequired": "Password is required",
@@ -14,5 +17,14 @@
   "settings": "Settings",
   "users": "Users",
   "loans": "Loans",
-  "books": "Books"
+  "books": "Books",
+  "bookId": "ID",
+  "bookCover": "Cover",
+  "bookTitle": "Title",
+  "bookAuthor": "Author",
+  "bookStatus": "Status",
+  "statusAvailable": "Available",
+  "addBook": "Add book",
+  "save": "Save",
+  "newBook": "New Book"
 }
