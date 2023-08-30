@@ -20,13 +20,13 @@
   "users": "Users",
   "loans": "Loans",
   "books": "Books",
-  "bookId": "ID",
+  "id": "ID",
   "bookCover": "Cover",
   "bookTitle": "Title",
   "bookAuthor": "Author",
   "bookStatus": "Status",
   "bookCount": "Copies",
-  "bookActions": "Actions",
+  "actions": "Actions",
   "statusAvailable": "Available",
   "addBook": "Add Book",
   "save": "Save",
@@ -34,5 +34,9 @@
   "addUser": "Add User",
   "newUser": "New User",
   "delete": "Delete",
-  "view": "View"
+  "view": "View",
+  "userAvatar": "Avatar",
+  "userName": "Name",
+  "userRole": "Role",
+  "userEmail": "Email"
 }

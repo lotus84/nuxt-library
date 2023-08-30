@@ -1,17 +1,17 @@
 <script setup>
-import { useCatalogStore } from "~/stores/catalog";
+import { useUsersStore } from "~/stores/users";
 
 defineProps({
-  books: {
+  users: {
     type: Array,
     required: true,
   },
 });
 
-const catalogStore = useCatalogStore();
+const usersStore = useUsersStore();
 
 function onDeleteHandler(id) {
-  catalogStore.deleteBookFromCatalogById(Number(id));
+  usersStore.deleteUserById(Number(id));
 }
 </script>
 
@@ -23,30 +23,28 @@ function onDeleteHandler(id) {
       >
         <tr>
           <th class="px-6 py-3">{{ $t("id") }}</th>
-          <th class="px-6 py-3">{{ $t("bookCover") }}</th>
-          <th class="px-6 py-3">{{ $t("bookTitle") }}</th>
-          <th class="px-6 py-3">{{ $t("bookAuthor") }}</th>
-          <th class="px-6 py-3">{{ $t("bookCount") }}</th>
-          <th class="px-6 py-3">{{ $t("bookStatus") }}</th>
+          <th class="px-6 py-3">{{ $t("userAvatar") }}</th>
+          <th class="px-6 py-3">{{ $t("userName") }}</th>
+          <th class="px-6 py-3">{{ $t("userEmail") }}</th>
+          <th class="px-6 py-3">{{ $t("userRole") }}</th>
           <th class="px-6 py-3">{{ $t("actions") }}</th>
         </tr>
       </thead>
       <tbody>
         <tr
-          v-for="book in books"
-          :key="book.key"
+          v-for="user in users"
+          :key="user.id"
           class="bg-white border-b border-lavender dark:bg-gray-800 dark:border-gray-700"
         >
-          <td class="px-6 py-4">{{ book.key }}</td>
+          <td class="px-6 py-4">{{ user.id }}</td>
           <td class="px-6 py-4">
             <span class="inline-flex w-12">
-              <img class="w-12 h-auto" :src="book.cover" alt="" />
+              <img class="w-12 h-auto rounded-full" :src="user.image" alt="" />
             </span>
           </td>
-          <td class="px-6 py-4">{{ book.title }}</td>
-          <td class="px-6 py-4">{{ book.author.name }}</td>
-          <td class="px-6 py-4">{{ book.count }}</td>
-          <td class="px-6 py-4">{{ $t("statusAvailable") }}</td>
+          <td class="px-6 py-4">{{ `${user.firstName} ${user.lastName}` }}</td>
+          <td class="px-6 py-4">{{ user.email }}</td>
+          <td class="px-6 py-4">{{ user.role }}</td>
           <td class="px-6 py-4">
             <div class="flex items-center gap-3">
               <NuxtLink
@@ -58,7 +56,7 @@ function onDeleteHandler(id) {
               <button
                 class="p-1 text-jam transition-colors hover:opacity-75"
                 type="button"
-                @click="onDeleteHandler(book.key)"
+                @click="onDeleteHandler(user.id)"
               >
                 {{ $t("delete") }}
               </button>

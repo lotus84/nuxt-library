@@ -18,13 +18,13 @@
   "users": "Пользователи",
   "loans": "Выданные читателям",
   "books": "Книги",
-  "bookId": "ID",
+  "id": "ID",
   "bookCover": "Обложка",
   "bookTitle": "Название",
   "bookAuthor": "Автор",
   "bookStatus": "Статус",
   "bookCount": "кол-во",
-  "bookActions": "Действия",
+  "actions": "Действия",
   "statusAvailable": "В наличии",
   "addBook": "Добавить книгу",
   "save": "Сохранить",
@@ -32,5 +32,9 @@
   "addUser": "Добавить пользователя",
   "newUser": "Новый пользователь",
   "delete": "Удалить",
-  "view": "Посмотреть"
+  "view": "Посмотреть",
+  "userAvatar": "Аватарка",
+  "userName": "Имя",
+  "userRole": "Роль",
+  "userEmail": "Электронная почта"
 }
