@@ -43,5 +43,11 @@
   "userName": "Name",
   "userRole": "Role",
   "member": "Member",
-  "librarian": "Librarian"
+  "librarian": "Librarian",
+  "addLoan": "Add Loan",
+  "book": "Book",
+  "readerName": "Reader Name",
+  "readerEmail": "Reader Email",
+  "issueData": "Issue Data",
+  "dueData": "Due Data"
 }

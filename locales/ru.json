@@ -41,5 +41,11 @@
   "userName": "Имя",
   "userRole": "Роль",
   "member": "Читатель",
-  "librarian": "Библиотекарь"
+  "librarian": "Библиотекарь",
+  "addLoan": "Выдать книгу",
+  "book": "Книга",
+  "readerName": "Имя читателя",
+  "readerEmail": "Email читателя",
+  "issueData": "Дата выдачи",
+  "dueData": "Срок возврата"
 }
