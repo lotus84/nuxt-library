@@ -1,5 +1,4 @@
 <script setup>
-import { reactive } from "vue";
 import { useRouter } from "vue-router";
 import { Form } from "vee-validate";
 import { object, string } from "yup";
@@ -9,32 +8,35 @@ import BaseButton from "~/components/base/BaseButton.vue";
 
 const catalog = useCatalogStore();
 
-const book = reactive({
+const book = {
   key: "",
   title: "",
   cover: "",
   author: {
     name: "",
   },
-});
+};
 
-const booksLength = computed(() => {
+const newBookId = computed(() => {
   return (catalog.books || []).length;
 });
 
 const schema = object().shape({
+  bookId: string().notRequired(),
   title: string().required("Укажите название"),
   author: string().required("Укажите автора"),
   cover: string().required("Укажите ссылку на обложку"),
+  count: string().required("Укажите количество экземпляров"),
 });
 
 const router = useRouter();
 
 function onSubmit(event) {
-  book.key = booksLength;
+  book.key = event["book-id"] || newBookId;
   book.title = event.title;
   book.cover = event.cover;
   book.author.name = event.author;
+  book.count = event.count;
 
   catalog.addBook(book);
 
@@ -60,6 +62,13 @@ function onInvalidSubmit() {
   >
     <div>
       <BaseInput
+        :placeholder="$t('placeholder.bookID')"
+        name="book-id"
+        type="text"
+      />
+    </div>
+    <div>
+      <BaseInput
         :placeholder="$t('placeholder.bookTitle')"
         name="title"
         type="text"
@@ -76,6 +85,13 @@ function onInvalidSubmit() {
       <BaseInput
         :placeholder="$t('placeholder.bookCover')"
         name="cover"
+        type="text"
+      />
+    </div>
+    <div>
+      <BaseInput
+        :placeholder="$t('placeholder.bookCount')"
+        name="count"
         type="text"
       />
     </div>

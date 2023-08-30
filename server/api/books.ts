@@ -2,6 +2,7 @@ export default defineEventHandler(() => {
   return [
     {
       key: "1",
+      count: 2,
       title: "A Murder Is Announced",
       author: {
         bio: "Agatha Mary Clarissa Miller was born in Torquay, Devon, in the United Kingdom, the daughter of a wealthy American stockbroker. Her father died when she was eleven years old. Her mother taught her at home, encouraging her to write at a very young age. At the age of 16, she went to Mrs. Dryden's finishing school in Paris to study singing and piano. In 1914, at age 24, she married Colonel Archibald Christie, an aviator in the Royal Flying Corps. While he went away to war, she worked as a nurse and wrote her first novel, The Mysterious Affair at Styles (1920), which wasn't published until four years later. When her husband came back from the war, they had a daughter. In 1928 she divorced her husband, who had been having an affair. In 1930, she married Sir Max Mallowan, an archaeologist and a Catholic. She was happy in the early years of her second marriage, and did not divorce her husband despite his many affairs. She travelled with her husband's job, and set several of her novels set in the Middle East. Most of her other novels were set in a fictionalized Devon, where she was born.\r\n\r\nAgatha Christie is credited with developing the \"cozy style\" of mystery, which became popular in, and ultimately defined, the Golden Age of fiction in England in the 1920s and '30s, an age of which she is considered to have been Queen. In all, she wrote over 66 novels, numerous short stories and screenplays, and a series of romantic novels using the pen name Mary Westmacott. She was the single most popular mystery writer of all time. In 1971 she was made a Dame Commander of the Order of the British Empire.",
@@ -13,6 +14,7 @@ export default defineEventHandler(() => {
     },
     {
       key: "2",
+      count: 1,
       title: "Сто лет одиночества",
       description:
         "«Сто лет одиночества» (исп. Cien años de soledad) — роман колумбийского писателя Габриэля Гарсиа Маркеса, одно из наиболее характерных и популярных произведений в направлении магического реализма. Первое издание романа было опубликовано в Буэнос-Айресе в июне 1967 года тиражом 8000 (сначала 3000 — потом 5000) экземпляров. Роман был удостоен премии Ромуло Гальегоса. На сегодняшний день продано более 30 миллионов экземпляров, роман переведён на 35 языков мира.",
@@ -24,6 +26,7 @@ export default defineEventHandler(() => {
     },
     {
       key: "3",
+      count: 1,
       description:
         "«Хо́ббит, или Туда́ и обра́тно» (англ. The Hobbit, or There and Back Again) — повесть английского писателя Джона Р. Р. Толкина. Впервые опубликована в 1937 году издательством George Allen & Unwin, став со временем классикой детской литературы. В основе сюжета — путешествие хоббита Бильбо Бэггинса, волшебника Гэндальфа и тринадцати гномов во главе с Торином Дубощитом. Их путь лежит к Одинокой Горе, где находятся гномьи сокровища, охраняемые драконом Смаугом.",
       title: "Хоббит, или Туда и обратно",
@@ -35,6 +38,7 @@ export default defineEventHandler(() => {
     },
     {
       key: "4",
+      count: 7,
       title: "Повелитель мух",
       author: {
         bio: "Уильям Голдинг – известный английский прозаик, лауреат Нобелевской премии по литературе 1983 года. Первые шаги к литературной карьере Сэр Уильям Джералд Голдинг родился 19 сентября 1911 года в деревне Сент-Коламб Майнор графства Корнуолл. Его отец был школьным преподавателем и придерживался радикальных политических взглядов, а мать была суфражисткой. Поступив в колледж Брэйзноз (Оксфорд), мальчик изучал английский язык и литературу. Через год после окончания учебного заведения юноша опубликовал свою первую книгу – сборник стихотворений. Следующие несколько лет Уильям был сотрудником расчетной палаты Лондона, а с 1939 года, перебравшись в Солсбери, преподавал английский язык.",

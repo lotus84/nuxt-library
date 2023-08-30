@@ -4,9 +4,15 @@
   "placeholder": {
     "username": "Логин",
     "password": "Пароль",
+    "bookID": "ID книги",
     "bookTitle": "Название",
     "bookAuthor": "Автор",
-    "bookCover": "Ссылка на обложку"
+    "bookCover": "Ссылка на обложку",
+    "bookCount": "Количество экземпляров",
+    "userEmail": "Электронная почта",
+    "firstName": "Имя",
+    "lastName": "Фамилия",
+    "image": "Ссылка на аватарку"
   },
   "selectLanguage": "выбрать язык",
   "innerLayout": "Какой-то внутренний лейаут для всех страниц",
@@ -16,13 +22,24 @@
   "users": "Пользователи",
   "loans": "Выданные читателям",
   "books": "Книги",
-  "bookId": "ID",
+  "id": "ID",
   "bookCover": "Обложка",
   "bookTitle": "Название",
   "bookAuthor": "Автор",
   "bookStatus": "Статус",
+  "bookCount": "кол-во",
+  "actions": "Действия",
   "statusAvailable": "В наличии",
   "addBook": "Добавить книгу",
   "save": "Сохранить",
-  "newBook": "Новая книга"
+  "newBook": "Новая книга",
+  "addUser": "Добавить пользователя",
+  "newUser": "Новый пользователь",
+  "delete": "Удалить",
+  "view": "Посмотреть",
+  "userAvatar": "Аватарка",
+  "userName": "Имя",
+  "userRole": "Роль",
+  "member": "Читатель",
+  "librarian": "Библиотекарь"
 }

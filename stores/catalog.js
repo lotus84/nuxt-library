@@ -18,7 +18,20 @@ export const useCatalogStore = defineStore("catalog", () => {
   }
 
   function addBook(book) {
-    books.push(book);
+    const bookInCatalog = findBookById(book.key);
+
+    if (bookInCatalog) {
+      bookInCatalog.count += Number(book.count);
+    } else {
+      books.push(book);
+    }
+  }
+
+  function deleteBookFromCatalogById(id) {
+    const indexDeletedBook = books.findIndex(
+      (book) => Number(book.key) === Number(id),
+    );
+    books.splice(indexDeletedBook, 1);
   }
 
   return {
@@ -27,5 +40,6 @@ export const useCatalogStore = defineStore("catalog", () => {
     getBooks,
     findBookById,
     addBook,
+    deleteBookFromCatalogById,
   };
 });
