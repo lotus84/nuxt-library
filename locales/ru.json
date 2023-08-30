@@ -12,7 +12,10 @@
     "userEmail": "Электронная почта",
     "firstName": "Имя",
     "lastName": "Фамилия",
-    "image": "Ссылка на аватарку"
+    "image": "Ссылка на аватарку",
+    "loanBook": "Книга",
+    "loanReader": "Читатель",
+    "loanData": "Дата выдачи"
   },
   "selectLanguage": "выбрать язык",
   "innerLayout": "Какой-то внутренний лейаут для всех страниц",
@@ -47,5 +50,6 @@
   "readerName": "Имя читателя",
   "readerEmail": "Email читателя",
   "issueData": "Дата выдачи",
-  "dueData": "Срок возврата"
+  "dueData": "Срок возврата",
+  "newLoan": "Новая запись"
 }
