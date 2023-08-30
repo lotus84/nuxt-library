@@ -18,7 +18,9 @@ defineProps({
           <th class="px-6 py-3">{{ $t("bookCover") }}</th>
           <th class="px-6 py-3">{{ $t("bookTitle") }}</th>
           <th class="px-6 py-3">{{ $t("bookAuthor") }}</th>
+          <th class="px-6 py-3">{{ $t("bookCount") }}</th>
           <th class="px-6 py-3">{{ $t("bookStatus") }}</th>
+          <th class="px-6 py-3">{{ $t("bookActions") }}</th>
         </tr>
       </thead>
       <tbody>
@@ -35,7 +37,16 @@ defineProps({
           </td>
           <td class="px-6 py-4">{{ book.title }}</td>
           <td class="px-6 py-4">{{ book.author.name }}</td>
+          <td class="px-6 py-4">{{ book.count }}</td>
           <td class="px-6 py-4">{{ $t("statusAvailable") }}</td>
+          <td class="px-6 py-4">
+            <div>
+              <NuxtLink to="/">
+                {{ $t("view") }}
+              </NuxtLink>
+              <button type="button">{{ $t("delete") }}</button>
+            </div>
+          </td>
         </tr>
       </tbody>
     </table>

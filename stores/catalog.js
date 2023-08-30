@@ -18,7 +18,14 @@ export const useCatalogStore = defineStore("catalog", () => {
   }
 
   function addBook(book) {
-    books.push(book);
+    const bookInCatalog = findBookById(book.key);
+    console.log(bookInCatalog)
+
+    if (bookInCatalog) {
+      bookInCatalog.count += Number(book.count);
+    } else {
+      books.push(book);
+    }
   }
 
   return {

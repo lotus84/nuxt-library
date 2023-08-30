@@ -4,9 +4,11 @@
   "placeholder": {
     "username": "Логин",
     "password": "Пароль",
+    "bookID": "ID книги",
     "bookTitle": "Название",
     "bookAuthor": "Автор",
-    "bookCover": "Ссылка на обложку"
+    "bookCover": "Ссылка на обложку",
+    "bookCount": "Количество экземпляров"
   },
   "selectLanguage": "выбрать язык",
   "innerLayout": "Какой-то внутренний лейаут для всех страниц",
@@ -21,8 +23,14 @@
   "bookTitle": "Название",
   "bookAuthor": "Автор",
   "bookStatus": "Статус",
+  "bookCount": "кол-во",
+  "bookActions": "Действия",
   "statusAvailable": "В наличии",
   "addBook": "Добавить книгу",
   "save": "Сохранить",
-  "newBook": "Новая книга"
+  "newBook": "Новая книга",
+  "addUser": "Добавить пользователя",
+  "newUser": "Новый пользователь",
+  "delete": "Удалить",
+  "view": "Посмотреть"
 }

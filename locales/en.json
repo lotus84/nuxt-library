@@ -4,9 +4,11 @@
   "placeholder": {
     "username": "Username",
     "password": "Password",
+    "bookID": "Book ID",
     "bookTitle": "Title",
     "bookAuthor": "Author",
-    "bookCover": "Cover Link"
+    "bookCover": "Cover Link",
+    "bookCount": "Copies of Book"
   },
   "emailRequired": "Email is required",
   "passwordRequired": "Password is required",
@@ -23,8 +25,14 @@
   "bookTitle": "Title",
   "bookAuthor": "Author",
   "bookStatus": "Status",
+  "bookCount": "Copies",
+  "bookActions": "Actions",
   "statusAvailable": "Available",
-  "addBook": "Add book",
+  "addBook": "Add Book",
   "save": "Save",
-  "newBook": "New Book"
+  "newBook": "New Book",
+  "addUser": "Add User",
+  "newUser": "New User",
+  "delete": "Delete",
+  "view": "View"
 }
