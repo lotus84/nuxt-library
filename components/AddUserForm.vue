@@ -29,7 +29,7 @@ const selectOptions = [
   },
 ];
 
-const usersLength = computed(() => {
+const newUserId = computed(() => {
   return (usersStore.users || []).length;
 });
 
@@ -43,7 +43,7 @@ const schema = object().shape({
 const router = useRouter();
 
 function onSubmit(event) {
-  user.id = usersLength;
+  user.id = newUserId;
   user.email = event.email;
   user.firstName = event.name;
   user.lastName = event.surname;
