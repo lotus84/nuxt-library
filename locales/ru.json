@@ -8,7 +8,11 @@
     "bookTitle": "Название",
     "bookAuthor": "Автор",
     "bookCover": "Ссылка на обложку",
-    "bookCount": "Количество экземпляров"
+    "bookCount": "Количество экземпляров",
+    "userEmail": "Электронная почта",
+    "firstName": "Имя",
+    "lastName": "Фамилия",
+    "image": "Ссылка на аватарку"
   },
   "selectLanguage": "выбрать язык",
   "innerLayout": "Какой-то внутренний лейаут для всех страниц",
@@ -36,5 +40,6 @@
   "userAvatar": "Аватарка",
   "userName": "Имя",
   "userRole": "Роль",
-  "userEmail": "Электронная почта"
+  "member": "Читатель",
+  "librarian": "Библиотекарь"
 }

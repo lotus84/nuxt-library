@@ -1,5 +1,5 @@
 <script setup>
-import AddUserForm from "~/components/AddBookForm.vue";
+import AddUserForm from "~/components/AddUserForm.vue";
 
 definePageMeta({
   layout: "inner",

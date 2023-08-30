@@ -3,42 +3,55 @@ import { reactive } from "vue";
 import { useRouter } from "vue-router";
 import { Form } from "vee-validate";
 import { object, string } from "yup";
-import { useCatalogStore } from "~/stores/catalog";
+import { useUsersStore } from "~/stores/users";
 import BaseInput from "~/components/base/BaseInput.vue";
 import BaseButton from "~/components/base/BaseButton.vue";
 
-const catalog = useCatalogStore();
+const usersStore = useUsersStore();
 
-const book = reactive({
-  key: "",
-  title: "",
-  cover: "",
-  author: {
-    name: "",
-  },
+const user = reactive({
+  id: "",
+  email: "",
+  firstName: "",
+  lastName: "",
+  image: "",
+  role: "member",
 });
 
-const booksLength = computed(() => {
-  return (catalog.books || []).length;
+const selectOptions = [
+  {
+    text: "member",
+    value: "member",
+  },
+  {
+    text: "librarian",
+    value: "librarian",
+  },
+];
+
+const usersLength = computed(() => {
+  return (usersStore.users || []).length;
 });
 
 const schema = object().shape({
-  title: string().required("Укажите название"),
-  author: string().required("Укажите автора"),
-  cover: string().required("Укажите ссылку на обложку"),
+  email: string().required("Укажите email"),
+  name: string().required("Укажите имя"),
+  surname: string().required("Укажите фамилию"),
+  image: string().required("Укажите ссылку на аватарку"),
 });
 
 const router = useRouter();
 
 function onSubmit(event) {
-  book.key = booksLength;
-  book.title = event.title;
-  book.cover = event.cover;
-  book.author.name = event.author;
+  user.id = usersLength;
+  user.email = event.email;
+  user.firstName = event.name;
+  user.lastName = event.surname;
+  user.image = event.image;
 
-  catalog.addBook(book);
+  usersStore.addUser(user);
 
-  router.push({ name: "books" });
+  router.push({ name: "users" });
 }
 
 function onInvalidSubmit() {
@@ -60,24 +73,34 @@ function onInvalidSubmit() {
   >
     <div>
       <BaseInput
-        :placeholder="$t('placeholder.bookTitle')"
-        name="title"
+        :placeholder="$t('placeholder.userEmail')"
+        name="email"
         type="text"
       />
     </div>
     <div>
       <BaseInput
-        :placeholder="$t('placeholder.bookAuthor')"
-        name="author"
+        :placeholder="$t('placeholder.firstName')"
+        name="name"
         type="text"
       />
     </div>
     <div>
       <BaseInput
-        :placeholder="$t('placeholder.bookCover')"
-        name="cover"
+        :placeholder="$t('placeholder.lastName')"
+        name="surname"
         type="text"
       />
+    </div>
+    <div>
+      <BaseInput
+        :placeholder="$t('placeholder.image')"
+        name="image"
+        type="text"
+      />
+    </div>
+    <div>
+      <BaseSelect v-model="user.role" :options="selectOptions" />
     </div>
     <div>
       <BaseButton class="submit-button" type="submit">{{

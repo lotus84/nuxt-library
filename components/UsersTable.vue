@@ -39,12 +39,12 @@ function onDeleteHandler(id) {
           <td class="px-6 py-4">{{ user.id }}</td>
           <td class="px-6 py-4">
             <span class="inline-flex w-12">
-              <img class="w-12 h-auto rounded-full" :src="user.image" alt="" />
+              <img class="w-20 h-auto rounded-lg" :src="user.image" alt="" />
             </span>
           </td>
           <td class="px-6 py-4">{{ `${user.firstName} ${user.lastName}` }}</td>
           <td class="px-6 py-4">{{ user.email }}</td>
-          <td class="px-6 py-4">{{ user.role }}</td>
+          <td class="px-6 py-4">{{ $t(user.role) }}</td>
           <td class="px-6 py-4">
             <div class="flex items-center gap-3">
               <NuxtLink

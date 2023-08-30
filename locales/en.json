@@ -8,7 +8,11 @@
     "bookTitle": "Title",
     "bookAuthor": "Author",
     "bookCover": "Cover Link",
-    "bookCount": "Copies of Book"
+    "bookCount": "Copies of Book",
+    "userEmail": "Email",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "image": "Аvatar"
   },
   "emailRequired": "Email is required",
   "passwordRequired": "Password is required",
@@ -38,5 +42,6 @@
   "userAvatar": "Avatar",
   "userName": "Name",
   "userRole": "Role",
-  "userEmail": "Email"
+  "member": "Member",
+  "librarian": "Librarian"
 }
