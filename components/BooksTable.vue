@@ -1,10 +1,18 @@
 <script setup>
+import { useCatalogStore } from "~/stores/catalog";
+
 defineProps({
   books: {
     type: Array,
     required: true,
   },
 });
+
+const catalogStore = useCatalogStore();
+
+function onDeleteHandler(id) {
+  catalogStore.deleteBookFromCatalogById(Number(id));
+}
 </script>
 
 <template>
@@ -40,11 +48,17 @@ defineProps({
           <td class="px-6 py-4">{{ book.count }}</td>
           <td class="px-6 py-4">{{ $t("statusAvailable") }}</td>
           <td class="px-6 py-4">
-            <div>
-              <NuxtLink to="/">
+            <div class="flex items-center gap-3">
+              <NuxtLink class="p-1 text-blue" to="">
                 {{ $t("view") }}
               </NuxtLink>
-              <button type="button">{{ $t("delete") }}</button>
+              <button
+                class="p-1 text-jam"
+                type="button"
+                @click="onDeleteHandler(book.key)"
+              >
+                {{ $t("delete") }}
+              </button>
             </div>
           </td>
         </tr>

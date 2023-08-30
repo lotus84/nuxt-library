@@ -20,6 +20,7 @@ module.exports = {
       melrose: "#CAC6DA",
       tolopea: "#1E193E",
       jam: "#DB574D",
+      blue: "#0ea5e9",
     },
   },
   darkMode: "class",

@@ -19,7 +19,6 @@ export const useCatalogStore = defineStore("catalog", () => {
 
   function addBook(book) {
     const bookInCatalog = findBookById(book.key);
-    console.log(bookInCatalog)
 
     if (bookInCatalog) {
       bookInCatalog.count += Number(book.count);
@@ -28,11 +27,19 @@ export const useCatalogStore = defineStore("catalog", () => {
     }
   }
 
+  function deleteBookFromCatalogById(id) {
+    const indexDeletedBook = books.findIndex(
+      (book) => Number(book.key) === Number(id),
+    );
+    books.splice(indexDeletedBook, 1);
+  }
+
   return {
     books,
     isLoading,
     getBooks,
     findBookById,
     addBook,
+    deleteBookFromCatalogById,
   };
 });
