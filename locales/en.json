@@ -17,6 +17,7 @@
     "loanReader": "Reader",
     "loanData": "Issue Data"
   },
+  "userEmail": "Email",
   "emailRequired": "Email is required",
   "passwordRequired": "Password is required",
   "selectLanguage": "select a language",
