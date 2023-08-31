@@ -21,6 +21,7 @@ module.exports = {
       tolopea: "#1E193E",
       jam: "#DB574D",
       blue: "#0ea5e9",
+      pearl: "#A29EAE",
     },
   },
   darkMode: "class",

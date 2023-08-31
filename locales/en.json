@@ -34,6 +34,8 @@
   "bookAuthor": "Author",
   "bookStatus": "Status",
   "bookCount": "Copies",
+  "bookDescription": "About Book",
+  "aboutAuthor": "About Author",
   "actions": "Actions",
   "statusAvailable": "Available",
   "addBook": "Add Book",
@@ -56,5 +58,6 @@
   "dueData": "Due Data",
   "newLoan": "New Loan",
   "signOut": "Sign out",
-  "user": "User"
+  "user": "User",
+  "viewBook": "View Book"
 }
