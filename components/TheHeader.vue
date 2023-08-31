@@ -21,10 +21,10 @@ function onSignOutClick() {
   router.push({ path: "/" });
 }
 
-const emit = defineEmits(['toggle-sidebar']);
+const emit = defineEmits(["toggle-sidebar"]);
 
 function onMenuClick() {
-  emit('toggle-sidebar');
+  emit("toggle-sidebar");
 }
 </script>
 
