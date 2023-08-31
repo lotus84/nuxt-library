@@ -1,12 +1,14 @@
 <script setup>
 import TheSidebar from "~/components/TheSidebar.vue";
 import TheHeader from "~/components/TheHeader.vue";
+
+const isSidebarVisible = ref(true);
 </script>
 <template>
   <div class="flex min-h-screen w-full bg-grey">
-    <TheSidebar />
+    <TheSidebar v-if="isSidebarVisible" />
     <div class="flex flex-col grow justify-start items-start min-h-full">
-      <TheHeader />
+      <TheHeader @toggle-sidebar="isSidebarVisible = !isSidebarVisible" />
       <div
         class="flex flex-col grow justify-start items-start w-full bg-grey p-5"
       >
