@@ -20,6 +20,12 @@ function onSignOutClick() {
   authStore.logOutUser();
   router.push({ path: "/" });
 }
+
+const emit = defineEmits(['toggle-sidebar']);
+
+function onMenuClick() {
+  emit('toggle-sidebar');
+}
 </script>
 
 <template>
@@ -34,6 +40,7 @@ function onSignOutClick() {
             v-else
             class="inline-flex shrink-0 justify-center items-center px-5 py-5 transition-all text-5xl hover:opacity-50"
             type="button"
+            @click="onMenuClick"
           >
             <IconMenu />
           </button>
