@@ -51,5 +51,7 @@
   "readerEmail": "Email читателя",
   "issueData": "Дата выдачи",
   "dueData": "Срок возврата",
-  "newLoan": "Новая запись"
+  "newLoan": "Новая запись",
+  "signOut": "Выйти",
+  "user": "Пользователь"
 }

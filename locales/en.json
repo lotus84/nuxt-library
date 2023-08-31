@@ -53,5 +53,7 @@
   "readerEmail": "Reader Email",
   "issueData": "Issue Data",
   "dueData": "Due Data",
-  "newLoan": "New Loan"
+  "newLoan": "New Loan",
+  "signOut": "Sign out",
+  "user": "User"
 }
