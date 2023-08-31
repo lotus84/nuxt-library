@@ -17,6 +17,7 @@
     "loanReader": "Reader",
     "loanData": "Issue Data"
   },
+  "userEmail": "Email",
   "emailRequired": "Email is required",
   "passwordRequired": "Password is required",
   "selectLanguage": "select a language",
@@ -53,5 +54,7 @@
   "readerEmail": "Reader Email",
   "issueData": "Issue Data",
   "dueData": "Due Data",
-  "newLoan": "New Loan"
+  "newLoan": "New Loan",
+  "signOut": "Sign out",
+  "user": "User"
 }

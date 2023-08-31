@@ -3,9 +3,8 @@ import { ref } from "vue";
 
 const links = ref([
   {
-    // text: "Настройки",
-    text: "settings",
-    href: "settings",
+    text: "books",
+    href: "books",
   },
   {
     text: "users",
@@ -16,8 +15,8 @@ const links = ref([
     href: "loans",
   },
   {
-    text: "books",
-    href: "books",
+    text: "settings",
+    href: "settings",
   },
 ]);
 </script>
