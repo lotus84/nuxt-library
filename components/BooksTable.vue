@@ -1,5 +1,7 @@
 <script setup>
 import { useCatalogStore } from "~/stores/catalog";
+import { useLoansStore } from "~/stores/loans";
+import { BOOK_STATUSES } from "~/constants/book-statuses";
 
 defineProps({
   books: {
@@ -12,6 +14,14 @@ const catalogStore = useCatalogStore();
 
 function onDeleteHandler(id) {
   catalogStore.deleteBookFromCatalogById(Number(id));
+}
+
+const loansStore = useLoansStore();
+
+function getBookStatus(id) {
+  return loansStore.findLoanByBookId(id)
+    ? BOOK_STATUSES.unavailable
+    : BOOK_STATUSES.available;
 }
 </script>
 
@@ -46,7 +56,20 @@ function onDeleteHandler(id) {
           <td class="px-6 py-4">{{ book.title }}</td>
           <td class="px-6 py-4">{{ book.author.name }}</td>
           <td class="px-6 py-4">{{ book.count }}</td>
-          <td class="px-6 py-4">{{ $t("statusAvailable") }}</td>
+          <td class="px-6 py-4">
+            <span
+              v-if="getBookStatus(book.key) === BOOK_STATUSES.available"
+              class="inline-flex justify-center items-center py-2 px-4 text-malachite border-malachite border rounded"
+            >
+              {{ $t(getBookStatus(book.key)) }}
+            </span>
+            <span
+              v-else
+              class="inline-flex justify-center items-center py-2 px-4 text-jam border-jam border rounded"
+            >
+              {{ $t(getBookStatus(book.key)) }}
+            </span>
+          </td>
           <td class="px-6 py-4">
             <div class="flex items-center gap-3">
               <NuxtLink

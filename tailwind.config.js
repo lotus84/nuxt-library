@@ -22,6 +22,7 @@ module.exports = {
       jam: "#DB574D",
       blue: "#0ea5e9",
       pearl: "#A29EAE",
+      malachite: "#22C55E",
     },
   },
   darkMode: "class",

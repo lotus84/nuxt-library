@@ -17,6 +17,10 @@ export const useLoansStore = defineStore("loans", () => {
     return loans.find((loan) => Number(loan.id) === Number(id));
   }
 
+  function findLoanByBookId(bookId) {
+    return loans.find((loan) => Number(loan.bookKey) === Number(bookId));
+  }
+
   function addLoan(loan) {
     loans.push(loan);
   }
@@ -33,6 +37,7 @@ export const useLoansStore = defineStore("loans", () => {
     isLoading,
     getLoans,
     findLoanById,
+    findLoanByBookId,
     addLoan,
     deleteLoanById,
   };

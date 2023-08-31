@@ -2,6 +2,8 @@
 import { ref } from "vue";
 import { useCatalogStore } from "~/stores/catalog";
 import ContentContainer from "~/components/ContentContainer.vue";
+import { useLoansStore } from "~/stores/loans";
+import { BOOK_STATUSES } from "~/constants/book-statuses";
 
 const props = defineProps({
   id: {
@@ -15,12 +17,20 @@ const book = ref();
 const catalogStore = useCatalogStore();
 
 book.value = catalogStore.findBookById(Number(props.id));
+
+const loansStore = useLoansStore();
+
+function getBookStatus(id) {
+  return loansStore.findLoanByBookId(id)
+    ? BOOK_STATUSES.unavailable
+    : BOOK_STATUSES.available;
+}
 </script>
 
 <template>
   <div v-if="book">
     <ContentContainer>
-      <div class="w-full flex flex-col justify-start items-start gap-3">
+      <div class="w-full flex flex-col justify-start items-start gap-6">
         <div
           v-if="book.key"
           class="w-full flex justify-start items-start gap-6"
@@ -117,11 +127,22 @@ book.value = catalogStore.findBookById(Number(props.id));
           >
             {{ $t("bookStatus") }}
           </p>
-          <p
+          <div
             class="inline-flex justify-start items-start text-base text-primary"
           >
-            {{ $t("statusAvailable") }}
-          </p>
+            <span
+              v-if="getBookStatus(book.key) === BOOK_STATUSES.available"
+              class="inline-flex justify-center items-center py-2 px-4 text-malachite border-malachite border rounded"
+            >
+              {{ $t(getBookStatus(book.key)) }}
+            </span>
+            <span
+              v-else
+              class="inline-flex justify-center items-center py-2 px-4 text-jam border-jam border rounded"
+            >
+              {{ $t(getBookStatus(book.key)) }}
+            </span>
+          </div>
         </div>
         <div
           v-if="book.cover"
