@@ -31,7 +31,9 @@
   "bookTitle": "Название",
   "bookAuthor": "Автор",
   "bookStatus": "Статус",
-  "bookCount": "кол-во",
+  "bookCount": "Кол-во",
+  "bookDescription": "О книге",
+  "aboutAuthor": "Об авторе",
   "actions": "Действия",
   "statusAvailable": "В наличии",
   "addBook": "Добавить книгу",
@@ -54,5 +56,6 @@
   "dueData": "Срок возврата",
   "newLoan": "Новая запись",
   "signOut": "Выйти",
-  "user": "Пользователь"
+  "user": "Пользователь",
+  "viewBook": "Просмотр книги"
 }

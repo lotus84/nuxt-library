@@ -51,7 +51,7 @@ function onDeleteHandler(id) {
             <div class="flex items-center gap-3">
               <NuxtLink
                 class="p-1 text-blue transition-colors hover:opacity-75"
-                to=""
+                :to="`/books/${book.key}`"
               >
                 {{ $t("view") }}
               </NuxtLink>
